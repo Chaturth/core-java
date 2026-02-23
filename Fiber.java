@@ -37,8 +37,8 @@ class Bun {
     boolean fresh;
     String expiryDate;
     String shape;
-    String manufacturer;   // added
-    String taste;          // added
+    String manufacturer;   
+    String taste;          
     String[] ingredients;
     String[] outlets;
 }
