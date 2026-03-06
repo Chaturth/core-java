@@ -1,8 +1,8 @@
-class Name
+class Coachh
 {
     String coachName;
 
-    Name(String coachName)
+    Coachh(String coachName)
     {
         this.coachName = coachName;
     }

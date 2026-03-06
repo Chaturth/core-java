@@ -26,4 +26,37 @@ class Aquarium {
         this.heater = heater;
         this.glass = glass;
     }
+	void getInfo()
+{
+    System.out.println("Size: " + size);
+    System.out.println("Price: " + price);
+    System.out.println("Water Level: " + waterLevel);
+    System.out.println("Type: " + type);
+    System.out.println("Has Light: " + hasLight);
+
+    if(fish != null)
+    {
+        fish.getInfo();
+    }
+
+    if(filter != null)
+    {
+        filter.getInfo();
+    }
+
+    if(plant != null)
+    {
+        plant.getInfo();
+    }
+
+    if(heater != null)
+    {
+        heater.getInfo();
+    }
+
+    if(glass != null)
+    {
+        glass.getInfo();
+    }
+}
 }

@@ -1,8 +1,8 @@
-class Stadium
+class Stadiums
 {
     String stadiumName;
 
-    Stadium(String stadiumName)
+    Stadiums(String stadiumName)
     {
         this.stadiumName = stadiumName;
     }

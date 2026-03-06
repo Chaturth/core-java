@@ -35,6 +35,40 @@ class Lion {
         this.caretaker = caretaker;
         this.healthRecord = healthRecord;
     }
+	void getInfo()
+{
+    System.out.println("Lion Name: " + lionName);
+    System.out.println("Age: " + age);
+    System.out.println("Weight: " + weight);
+    System.out.println("Is Male: " + isMale);
+    System.out.println("Group Code: " + groupCode);
+
+    if(habitat != null)
+    {
+        habitat.getInfo();
+    }
+
+    if(food != null)
+    {
+        food.getInfo();
+    }
+
+    if(zoo != null)
+    {
+        zoo.getInfo();
+    }
+
+    if(caretaker != null)
+    {
+        caretaker.getInfo();
+    }
+
+    if(healthRecord != null)
+    {
+        healthRecord.getInfo();
+    }
+
+}
 }
 
 		

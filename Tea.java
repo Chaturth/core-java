@@ -26,4 +26,37 @@ class Tea {
         this.milk = milk;
         this.kettle = kettle;
     }
+	void getInfo()
+{
+    System.out.println("Cups: " + cups);
+    System.out.println("Price: " + price);
+    System.out.println("Temperature: " + temperature);
+    System.out.println("Size: " + size);
+    System.out.println("With Milk: " + withMilk);
+
+    if(leaf != null)
+    {
+        leaf.getInfo();
+    }
+
+    if(water != null)
+    {
+        water.getInfo();
+    }
+
+    if(sugar != null)
+    {
+        sugar.getInfo();
+    }
+
+    if(milk != null)
+    {
+        milk.getInfo();
+    }
+
+    if(kettle != null)
+    {
+        kettle.getInfo();
+    }
+}
 }

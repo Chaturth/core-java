@@ -1,8 +1,8 @@
-class Team
+class Teams
 {
     String teamName;
 
-    Team(String teamName)
+    Teams(String teamName)
     {
         this.teamName = teamName;
     }

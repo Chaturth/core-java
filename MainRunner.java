@@ -3,121 +3,149 @@ class MainRunner{
 	public static void main(String... args)
 	{
 		
-		Brand brand = new Brand();
-		Quality quality = new Quality();
-		Warranty warranty = new Warranty();
-		Price price = new Price();
-		Mousepad mousepad = new Mousepad();
 		
-		Mouse mouse = new Mouse("dell",0.4f,3,true,"good",brand,quality,warranty,price,mousepad);
-		System.out.println("Executing mouse runner");
+        Brand brand = new Brand("Dell");
+        Quality quality = new Quality(5);
+        Warranty warranty = new Warranty(365);
+        Price price = new Price(1200);
+        Mousepad mousepad = new Mousepad();
+
+        Mouse mouse = new Mouse("Dell", 0.4f, 3, true, "Good",
+                brand, quality, warranty, price, mousepad);
+
+        System.out.println("Executing Mouse Runner");
+        mouse.getInfo();
 		
-		Folder folder = new Folder();
-		Owner owner = new Owner();
-		Permission permission=new Permission();
-		Metadata metadata=new Metadata();
-		Storagedevice storagedevice=new Storagedevice();
+		 Folder folder = new Folder("Projects");
+        Owner owner = new Owner("Chaturth");
+        Permission permission = new Permission(true);
+        Metadata metadata = new Metadata("JavaFile");
+        Storagedevice storagedevice = new Storagedevice(500);
+
+        File file = new File("java",10,"c drive",true,2,folder,owner,permission,metadata,storagedevice);
+
+        System.out.println("Executing File Runner");
+        file.getInfo();
 		
-		File file =new File("java",10,"c drive",true,2,folder,owner,permission,metadata,storagedevice);
-		System.out.println("Executing file runner");
+		   Habitat habitat = new Habitat("Forest");
+        Food food = new Food("Meat");
+        Zoo zoo = new Zoo("Mysore Zoo");
+        Caretaker caretaker = new Caretaker("Ramesh");
+        HealthRecord healthRecord = new HealthRecord("Healthy");
+
+        Lion lion = new Lion("Simba",5,190.5,true,'A',
+                             habitat,food,zoo,caretaker,healthRecord);
+
+        System.out.println("Executing Lion Runner");
+
+        lion.getInfo();
 		
-		  Habitat habitat = new Habitat();
-        Food food = new Food();
-        Zoo zoo = new Zoo();
-        Caretaker caretaker = new Caretaker();
-        HealthRecord healthRecord = new HealthRecord();
+	   Battery battery = new Battery(5000);
+        Engine engine = new Engine(150);
+        Company company = new Company("Tesla");
+        Driver driver = new Driver("Arjun");
 
-        Lion lion = new Lion("Simha", 10, 50.0, true, 'A',
-                habitat, food, zoo, caretaker, healthRecord);
+        Motor motor = new Motor(180,2500000,25.5f,'A',true,"Tesla",
+                                battery,engine,company,driver);
 
-        System.out.println("Executing Lion runner");
+        System.out.println("Executing Motor Runner");
+
+        motor.getInfo();
 		
-		 Battery battery = new Battery();
-        Engine engine = new Engine();
-        Company company = new Company();
-        Driver driver = new Driver();
+	 Name name = new Name("John");
+        Team team = new Team("India");
+        Stadium stadium = new Stadium("Chinnaswamy");
+        Country country = new Country("India");
+        Assistant assistant = new Assistant("Rahul");
 
-		  Motor motor = new Motor(120, 75000.50, 45.5f, 'A', false, "Honda",
-                                new Battery(), new Engine(), new Company(), new Driver());
+        Coach coach = new Coach(10,500000,4.5f,'A',true,
+                                name,team,stadium,country,assistant);
 
-        System.out.println("Motor executing");
+        System.out.println("Executing Coach Runner");
+
+        coach.getInfo();
 		
-		Name name=new Name();
-		Team team = new Team();
-        Stadium stadium = new Stadium();
-        Country country = new Country();
-        Assistant assistant = new Assistant();
+		 
 
-        Coach coach = new Coach(12,45000.5,4.3f,'A',true,name,
-                                team,stadium,country,assistant);
+          Teams teams = new Teams("RCB");
+        Stadiums stadiums = new Stadiums("Chinnaswamy");
+        Player player = new Player("Virat");
+       Coachh coachh = new Coachh("Andy Flower");
+        Umpire umpire = new Umpire("Kumar");
 
-        System.out.println("Coach executing");
+      IPL ipl = new IPL(17,12000.5,4.8f,'A',true,
+                  teams,stadiums,player,coachh,umpire);
+
+        System.out.println("Executing IPL Runner");
+
+        ipl.getInfo();
+
+
 		
-		 Teams teams = new Teams();
-        Stadiums stadiums = new Stadiums();
-        Player player = new Player();
-        Coachh  coach = new Coachh();
-        Umpire umpire = new Umpire();
+		   Leaf leaf = new Leaf("Assam");
+        Water water = new Water(200);
+        Sugar sugar = new Sugar(2);
+        Milk milk = new Milk(100);
+        Kettle kettle = new Kettle("Prestige");
 
-        IPL ipl = new IPL(17,12000.50,4.7f,'A',true,
-                          teams,stadiums,player,coach,umpire);
-
-        System.out.println("IPL object created");
-		
-		 Therapist therapist = new Therapist();
-        Customer customer = new Customer();
-        Manager manager = new Manager();
-        Location location = new Location();
-        Service service = new Service();
-
-        Spa spa = new Spa(10,2500.50,4.5f,'A',true,
-                          therapist,customer,manager,location,service);
-
-        System.out.println("Spa executing");
-		
-		 Leaf leaf = new Leaf();
-        Water water = new Water();
-        Sugar sugar = new Sugar();
-        Milk milk = new Milk();
-        Kettle kettle = new Kettle();
-
-        Tea tea = new Tea(5,20.5,75.5f,'M',true,
+        Tea tea = new Tea(2,20.0,85.5f,'M',true,
                           leaf,water,sugar,milk,kettle);
 
-        System.out.println("Tea executing");
-		
-		 Metal metal = new Metal();
-        Sound sound = new Sound();
-        Rope rope = new Rope();
-        Temple temple = new Temple();
-        Manufacturer manufacturer = new Manufacturer();
+        System.out.println("Executing Tea Runner");
 
-        Bell bell = new Bell(10,500.5,2.5f,'A',false,
+        tea.getInfo();
+		
+		 Metal metal = new Metal("Bronze");
+        Sound sound = new Sound("Loud");
+        Rope rope = new Rope("Cotton");
+        Temple temple = new Temple("Tirupati");
+        Manufacturer manufacturer = new Manufacturer("TempleCraft");
+
+        Bell bell = new Bell(5,1500.0,2.5f,'A',false,
                              metal,sound,rope,temple,manufacturer);
 
-        System.out.println("Bell executing");
+        System.out.println("Executing Bell Runner");
+
+        bell.getInfo();
 		
-		 Server server = new Server();
-        Database database = new Database();
-        Network network = new Network();
-        Storage storage = new Storage();
-        Firewall firewall = new Firewall();
+		 Server server = new Server("AWS-Server");
+        Database database = new Database("MySQL");
+        Network network = new Network("VPC");
+        Storage storage = new Storage(1000);
+        Firewall firewall = new Firewall("SecureWall");
 
-        CloudWeb cloudWeb = new CloudWeb(10,500.5,12.5f,'A',true,
-                                         server,database,network,storage,firewall);
+        Cloud cloud = new Cloud(10,1000.5,2.3f,'A',true,
+                                server,database,network,storage,firewall);
 
-        System.out.println("CloudWeb executing");
+        System.out.println("Executing Cloud Runner");
+
+        cloud.getInfo();
 		
-		Fish fish = new Fish();
-        WaterFilter filter = new WaterFilter();
-        Plant plant = new Plant();
-        Heater heater = new Heater();
-        Glass glass = new Glass();
+	 Fish fish = new Fish("Goldfish");
+        WaterFilter filter = new WaterFilter("Carbon");
+        Plant plant = new Plant("Water Lily");
+        Heater heater = new Heater(26);
+        Glass glass = new Glass("Tempered");
 
-        Aquarium aquarium = new Aquarium(50,3000.50,40.5f,'A',true,
+        Aquarium aquarium = new Aquarium(50,5000.0,30.5f,'A',true,
                                          fish,filter,plant,heater,glass);
 
-        System.out.println("Aquarium executing");
+        System.out.println("Executing Aquarium Runner");
+
+        aquarium.getInfo();
+		
+		 Therapist therapist = new Therapist("Anita");
+        Customer customer = new Customer("Rahul");
+        Manager manager = new Manager("Suresh");
+        Location location = new Location("Bangalore");
+        Service service = new Service("Massage");
+
+        Spa spa = new Spa(5,2500.0,4.5f,'A',true,
+                          therapist,customer,manager,location,service);
+
+        System.out.println("Executing Spa Runner");
+
+        spa.getInfo();
     }
 }
 		

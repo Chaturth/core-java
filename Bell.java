@@ -28,4 +28,37 @@ class Bell {
         this.temple = temple;
         this.manufacturer = manufacturer;
     }
+	void getInfo()
+{
+    System.out.println("Size: " + size);
+    System.out.println("Price: " + price);
+    System.out.println("Weight: " + weight);
+    System.out.println("Type: " + type);
+    System.out.println("Electric: " + electric);
+
+    if(metal != null)
+    {
+        metal.getInfo();
+    }
+
+    if(sound != null)
+    {
+        sound.getInfo();
+    }
+
+    if(rope != null)
+    {
+        rope.getInfo();
+    }
+
+    if(temple != null)
+    {
+        temple.getInfo();
+    }
+
+    if(manufacturer != null)
+    {
+        manufacturer.getInfo();
+    }
+}
 }

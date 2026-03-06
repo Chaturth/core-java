@@ -28,4 +28,38 @@ class IPL {
         this.coach = coach;
         this.umpire = umpire;
     }
+	
+	void getInfo()
+{
+    System.out.println("Seasons: " + seasons);
+    System.out.println("Revenue: " + revenue);
+    System.out.println("Rating: " + rating);
+    System.out.println("Group: " + group);
+    System.out.println("Playoffs: " + playoffs);
+
+    if(teams != null)
+    {
+        teams.getInfo();
+    }
+
+    if(stadiums != null)
+    {
+        stadiums.getInfo();
+    }
+
+    if(player != null)
+    {
+        player.getInfo();
+    }
+
+    if(coach != null)
+    {
+        coach.getInfo();
+    }
+
+    if(umpire != null)
+    {
+        umpire.getInfo();
+    }
+}
 }

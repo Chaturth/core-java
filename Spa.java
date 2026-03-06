@@ -28,4 +28,37 @@ class Spa {
         this.location = location;
         this.service = service;
     }
+	void getInfo()
+{
+    System.out.println("Rooms: " + rooms);
+    System.out.println("Price: " + price);
+    System.out.println("Rating: " + rating);
+    System.out.println("Category: " + category);
+    System.out.println("Open: " + open);
+
+    if(therapist != null)
+    {
+        therapist.getInfo();
+    }
+
+    if(customer != null)
+    {
+        customer.getInfo();
+    }
+
+    if(manager != null)
+    {
+        manager.getInfo();
+    }
+
+    if(location != null)
+    {
+        location.getInfo();
+    }
+
+    if(service != null)
+    {
+        service.getInfo();
+    }
+}
 }

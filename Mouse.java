@@ -28,6 +28,48 @@ class Mouse {
         this.mousepad = mousepad;
 		  }
 		  
+		  
+		  void getInfo()
+		  {
+			  System.out.println(" name of the company:"+companyName);
+			    System.out.println(" weight:"+weight);
+				  System.out.println(" size:"+size);
+				    System.out.println(" isWireless"+isWireless);
+					  System.out.println(" qualityLevel:"+qualityLevel);
+					  
+					  if(brand!=null)
+					  {
+						  this.brand.getInfo();
+					  }
+					  
+					   if(quality!=null)
+					  {
+						 	  this.quality.getInfo();
+					  }
+					  
+					   if(warranty!=null)
+					  {
+						  	  this.warranty.getInfo();
+					  }
+					  
+					   if(price!=null)
+					  {
+							  this.price.getInfo();
+					  }
+					  
+					   if(mousepad!=null)
+					  {
+							  this.mousepad.getInfo();
+					  }
+					  
+					  
+					  
+					  
+					  
+					  
+		  }
+		  
+		  
 		
 	
 		
