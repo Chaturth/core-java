@@ -1,8 +1,8 @@
-class Person {
+class PaintBrand {
 
     String name;
 
-    Person(String name) {
+    PaintBrand(String name) {
         this.name = name;
     }
 }

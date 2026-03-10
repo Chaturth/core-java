@@ -1,8 +1,8 @@
-class Person {
+class Audience {
 
     String name;
 
-    Person(String name) {
+    Audience(String name) {
         this.name = name;
     }
 }

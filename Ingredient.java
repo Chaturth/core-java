@@ -1,8 +1,8 @@
-class Person {
+class Ingredient {
 
     String name;
 
-    Person(String name) {
+    Ingredient(String name) {
         this.name = name;
     }
 }
