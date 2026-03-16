@@ -28,6 +28,28 @@ class SingerNames {
 			}
 		}
 	}
+	
+	boolean search(String name)
+	{
+		if(names!=null)
+		{
+			for(String n:names)
+			{
+			   if(n== name)
+			   {
+				   System.out.println("name found:"+name);
+				   return true;
+			   }
+			}
+		}
+		
+			System.out.println("name not found");
+			return false;
+		
+		
+	}
+	
+		
 }
 
 	

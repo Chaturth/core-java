@@ -56,5 +56,7 @@ tw.storeModels("Fascino 125");
 tw.storeModels("Ray ZR 125");
 tw.storeModels("Pleasure Plus");
 tw.storeModels("Maestro Edge");
+
+boolean found=tw.search("Pleasure Plus");
 }
 }

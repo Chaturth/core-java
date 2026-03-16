@@ -8,29 +8,44 @@ class PetroleumCompany{
 	
 	PetroleumCompany(String[] names)
 	{
-		this.names=names;
+		this.names = names;
 	}
 	
 	void save(String name)
 	{
-		if(names!=null)
+		if(names != null)
 		{
-			int index=this.names.length;
+			int index = this.names.length;
 			
-			if(this.currentIndex<index)
+			if(this.currentIndex < index)
 			{
-				this.names[this.currentIndex]=name;
-				System.out.println("the names is saved:"+name);
-					System.out.println("current index"+currentIndex);
+				this.names[this.currentIndex] = name;
+				System.out.println("the names is saved:" + name);
+				System.out.println("current index " + currentIndex);
 					
 				this.currentIndex++;
-					
-			
+			}
+			else{
+				System.out.println("Array is full,name cant be added");
+			}
+		}
+	}
+		
+	boolean search(String name)
+	{
+		if(names != null)
+		{
+			for(String n : names)
+			{
+				if(n == name)
+				{
+					System.out.println("Name found: " + name);
+					return true;
+				}
+			}
 		}
 		
-		else{
-			System.out.println("Array is full,name cant be added");
-		}
-		}
+		System.out.println("Name not found: " + name);
+		return false;
 	}
 }

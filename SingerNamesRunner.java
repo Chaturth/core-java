@@ -26,5 +26,7 @@ singer.storenames("Vijay Prakash");
 singer.storenames("Kailash Kher");
 singer.storenames("Rahat Fateh Ali Khan");
 singer.storenames("Anuradha Paudwal");
+
+boolean found= singer.search("Vijay Prakash");
 }
 }

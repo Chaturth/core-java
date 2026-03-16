@@ -28,4 +28,21 @@ class TwowheelerModels {
 			}
 		}
 	}
+	
+	boolean search(String model)
+	{
+		if(models != null)
+		{
+			for(String m : models)
+			{
+				if(m == model)
+				{
+					System.out.println("Model found: " + model);
+					return true;
+				}
+			}
+		}
+		System.out.println("Model not found");
+		return false;
+	}
 }
