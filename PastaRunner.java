@@ -18,6 +18,12 @@ class PastaRunner {
 
         boolean found = p.search("Paneer Pasta");
 
+        p.update(0, "Special Pasta");
+        p.update("Paneer Pasta", "Premium Pasta");
+
+        p.delete(2);
+        p.delete("Tandoori Pasta");
+
     }
 
 }

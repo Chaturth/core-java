@@ -47,6 +47,56 @@ class Pasta {
         System.out.println("Pasta not found");
         return false;
     }
+	
+	boolean update(int index, String value) {
+    if (index >= 0 && index < pastas.length) {
+        System.out.println("Updating index " + index + " with value: " + value);
+        pastas[index] = value;
+        return true;
+    } else {
+        System.out.println("Invalid index");
+        return false;
+    }
+}
+
+boolean update(String oldValue, String newValue) {
+    if (pastas != null) {
+        for (int i = 0; i < pastas.length; i++) {
+            if (pastas[i] != null && pastas[i] == oldValue) {
+                pastas[i] = newValue;
+                System.out.println("Updating old value: " + oldValue + " to new value: " + newValue);
+                return true;
+            }
+        }
+    }
+    System.out.println("Value not found: " + oldValue);
+    return false;
+}
+
+boolean delete(int index) {
+    if (index >= 0 && index < pastas.length) {
+        System.out.println("Deleting pasta at index: " + index);
+        pastas[index] = null;
+        return true;
+    } else {
+        System.out.println("Invalid index");
+        return false;
+    }
+}
+
+boolean delete(String value) {
+    if (pastas != null) {
+        for (int i = 0; i < pastas.length; i++) {
+            if (pastas[i] != null && pastas[i] == value) {
+                System.out.println("Deleting pasta: " + value);
+                pastas[i] = null;
+                return true;
+            }
+        }
+    }
+    System.out.println("Pasta not found");
+    return false;
+}
 }
 	
 	

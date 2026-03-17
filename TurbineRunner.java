@@ -15,8 +15,18 @@ class TurbineRunner {
         t.save("Pelton Turbine");
         t.save("Francis Turbine");
         t.save("Kaplan Turbine");
+		
+		
 
         boolean found = t.search("Wind Turbine");
+		
+		t.update(0," SPECIAL TURBINE");
+		
+		t.update("Gas Turbine","Steam turbine");
+		
+		t.delete(2);
+         t.delete("Wind Turbine");
+		
 
     }
 }

@@ -18,6 +18,12 @@ class TreeRunner{
 
         boolean found = t.search("Mango");
 
+        t.update(0, "Special Tree");
+        t.update("Mango", "Golden Mango");
+
+        t.delete(2);
+        t.delete("Peepal");
+
     }
 
 }

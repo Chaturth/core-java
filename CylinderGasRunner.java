@@ -16,8 +16,13 @@ class CylinderGasRunner{
         c.save("Flame Gas");
         c.save("Aegis Gas");
 
-
 		boolean found=c.search("GoGas");
+		
+		c.update(0,"Special Gas");
+		c.update("GoGas","Premium Gas");
+		
+		c.delete(2);
+		c.delete("Reliance Gas");
 		
 	}
 	

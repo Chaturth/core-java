@@ -18,5 +18,11 @@ class SteelRunner {
 
         boolean found = s.search("JSW Steel");
 
+        s.update(0, "Special Steel");
+        s.update("JSW Steel", "Premium Steel");
+
+        s.delete(2);
+        s.delete("Essar Steel");
+
     }
 }

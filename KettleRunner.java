@@ -17,6 +17,12 @@ class KettleRunner {
         k.save("Ceramic Kettle");
 
         boolean found = k.search("Tea Kettle");
+		
+		k.update(0,"special electric kettle");
+		k.update("Steel Kettle","Electric Kettle");
+		
+		k.delete(2);
+		k.delete("Travel Kettle");
 
     }
 }

@@ -3,7 +3,6 @@ public class PetroleumRunner {
      
         String[] names = new String[10];
 
-       
         PetroleumCompany petrol = new PetroleumCompany(names);
 
         petrol.save("Indian Oil");
@@ -19,8 +18,11 @@ public class PetroleumRunner {
 		
 		boolean found=petrol.search("Indian Oil");
 		
+		petrol.update(0,"Special Petroleum");
+		petrol.update("Shell","Premium Shell");
 		
+		petrol.delete(2);
+		petrol.delete("Reliance Petroleum");
 		
-			
     }
 }
