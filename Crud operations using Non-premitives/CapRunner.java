@@ -115,6 +115,18 @@ store.save(new CloudSoftware("Google Drive", "Google", "SaaS", 300, "Storage", t
 store.save(new CloudSoftware("Slack", "Slack", "SaaS", 800, "Communication", true));
 store.save(new CloudSoftware("Zoom", "Zoom", "SaaS", 600, "Communication", true));
 
+Farmer[] farmer = new Farmer[10];
+FarmerStore farmerstore = new FarmerStore(farmer);
+
+farmerstore.save(new FarmerStore("Chaturth","Balehonnuru","Coffee",10,"Black soil");
+farmerstore.save(new FarmerStore("shodan","seegodu","arecanut",15,"Black soil");
+farmerstore.save(new FarmerStore("aman","Balehonnuru","Coffee",5,"red soil");
+farmerstore.save(new FarmerStore("koya","koppa","ragi",20,"mud soil");
+farmerstore.save(new FarmerStore("danush","kadbgere","ragi",10,"Black soil");
+farmerstore.save(new FarmerStore("shrijith","Bannur","Coffee",30,"red soil");
+farmerstore.save(new FarmerStore("manjunath","kanthi","ragi",2,"Black soil");
+farmerstore.save(new FarmerStore("raksha","chillamagaluru","paddy",10,"Black soil");
+farmerstore.save(new FarmerStore("rajesh","hassan","tomato",1,"red soil");
 
 	}
 }
