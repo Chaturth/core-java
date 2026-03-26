@@ -76,14 +76,14 @@ Product p68 = new Product("Shelf","Wooden","2022",3500,ProductType.Furniture,"Fu
 Product p69 = new Product("Smart TV","Realme","2024",32000,ProductType.TV,"Online",WarrantyYears.Two_Years,false,"69","India");
 Product p70 = new Product("Mini Fridge","Godrej","2023",16000,ProductType.Fridge,"Store",WarrantyYears.Three_years,false,"70","India");
 Product p71 = new Product("Dining Table","Nilkamal","2022",12000,ProductType.Furniture,"Furniture Shop",WarrantyYears.Two_Years,false,"71","India");
-Product p72 = new Product("Microwave Oven","IFB","2023",15000,ProductType.Kitchen_Appliance,"Electronics Shop",WarrantyYears.Two_Years,false,"72","India");
+Product p72 = new Product("Microwave Oven","IFB","2023",15000,ProductType.TV,"Electronics Shop",WarrantyYears.Two_Years,false,"72","India");
 Product p73 = new Product("Rice","India Gate","2024",950,ProductType.Groceries,"Supermarket",WarrantyYears.One_Year,false,"73","India");
-Product p74 = new Product("Air Conditioner","Voltas","2023",35000,ProductType.Appliance,"Store",WarrantyYears.Three_years,false,"74","India");
-Product p75 = new Product("Laptop","HP","2024",55000,ProductType.Electronics,"Online",WarrantyYears.Two_Years,false,"75","India");
+Product p74 = new Product("Air Conditioner","Voltas","2023",35000,ProductType.TV,"Store",WarrantyYears.Three_years,false,"74","India");
+Product p75 = new Product("Laptop","HP","2024",55000,ProductType.Fridge,"Online",WarrantyYears.Two_Years,false,"75","India");
 Product p76 = new Product("Chair","Wooden","2022",2500,ProductType.Furniture,"Furniture Shop",WarrantyYears.Two_Years,false,"76","India");
-Product p77 = new Product("Juicer","Philips","2023",4500,ProductType.Kitchen_Appliance,"Electronics Shop",WarrantyYears.Two_Years,false,"77","India");
+Product p77 = new Product("Juicer","Philips","2023",4500,ProductType.TV,"Electronics Shop",WarrantyYears.Two_Years,false,"77","India");
 Product p78 = new Product("Biscuit","ParleG","2024",30,ProductType.Food,"Local Shop",WarrantyYears.One_Year,false,"78","India");
-Product p79 = new Product("Smartphone","Samsung","2024",28000,ProductType.Electronics,"Online",WarrantyYears.Two_Years,false,"79","India");
+Product p79 = new Product("Smartphone","Samsung","2024",28000,ProductType.TV,"Online",WarrantyYears.Two_Years,false,"79","India");
 Product p80 = new Product("Wardrobe","Godrej","2023",18000,ProductType.Furniture,"Furniture Shop",WarrantyYears.Three_years,false,"80","India");
 
         store.save(p1);
@@ -117,5 +117,10 @@ Product p80 = new Product("Wardrobe","Godrej","2023",18000,ProductType.Furniture
         store.getAllByType(ProductType.TV);
 		
         store.getAllByWarrantyYears(WarrantyYears.One_Year);
+		
+		Product[] multipleProducts={p5,p15,p25,p35,p44,p77,p64,p43,p23,p32};
+		store.save(multipleProducts);
+		
+		    store.displayAllProducts();
     }
 }
