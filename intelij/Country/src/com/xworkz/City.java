@@ -10,4 +10,9 @@ public class City {
         this.districts = districts;
         this.noOfDistricts = districts.length;
     }
+
+    @Override
+    public String toString() {
+        return "City{name='" + name + "'}";
+    }
 }
