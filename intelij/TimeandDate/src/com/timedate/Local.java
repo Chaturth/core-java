@@ -23,7 +23,5 @@ public class Local {
         System.out.println(current);
 
 
-
-
     }
 }
