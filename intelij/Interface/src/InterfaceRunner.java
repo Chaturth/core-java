@@ -16,6 +16,7 @@ public class InterfaceRunner {
         restaurant.provideWater();
         Restaurant.restaurantInfo();
 
+        
 
         School school = new PublicSchool();
         school.conductClass();
@@ -38,5 +39,6 @@ public class InterfaceRunner {
         station.announcement();
         station.waitingHall();
         RailwayStation.stationInfo();
+
     }
 }
