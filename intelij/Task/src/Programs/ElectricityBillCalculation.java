@@ -3,19 +3,36 @@ package Programs;
 public class ElectricityBillCalculation {
     public static void main(String[] args) {
 
-        int ConsumerId=1;
-        String ConsumerName="Rajesh";
-        String TypeOfBuilding="Residential";
-        double PreviousReading=1200;
-        double CurrentReading=1250;
+        String consumerName = "Rajesh";
+        String typeOfBuilding = "Commercial";
 
-        System.out.printf("%-15s %-20s %-20s %-20s %-20s %n",
-                "Consumer ID","Consumer Name","Type of building","Previous Reading","Current Reading");
+        int[] readings = {1200, 1250, 1300, 1360, 1410, 1470, 1520};
 
-        System.out.printf("%-15d %-20s %-20s %-20.2f %-20.2f %n",
-                ConsumerId,ConsumerName,TypeOfBuilding,PreviousReading,CurrentReading);
+        double totalBill = 0;
 
+        for (int i = 1; i <= 6; i++) {
 
+            int units = readings[i] - readings[i - 1];
+            double bill;
 
+            if (typeOfBuilding.equals("Commercial")) {
+                bill = units * 8;
+            } else {
+                bill = 0;
+            }
+
+            System.out.println("Month " + i);
+            System.out.println("Previous Reading = " + readings[i - 1]);
+            System.out.println("Current Reading = " + readings[i]);
+            System.out.println("Units = " + units);
+            System.out.println("Bill = ₹" + bill);
+            System.out.println();
+
+            totalBill = totalBill + bill;
+        }
+
+        System.out.println("Consumer Name = " + consumerName);
+        System.out.println("Total Bill = ₹" + totalBill);
+        System.out.println("Balance to Pay = ₹" + totalBill);
     }
 }
