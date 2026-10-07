@@ -7,8 +7,12 @@ enum Day {
 public class EnumExample {
     public static void main(String[] args) {
 
-        Day today = Day.FRIDAY;
+        Day today = Day.MONDAY;
 
-        System.out.println("Today is: " + today);
+        for(Day day:Day.values()){
+            System.out.println(day + ":"+day.ordinal());
+        }
+
+
     }
 }

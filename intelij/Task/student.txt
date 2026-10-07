@@ -1,0 +1,6 @@
+Student ID:02 
+Student name:Meena 
+marks:80 
+Student ID:03
+Student name:Ravi 
+marks:90
