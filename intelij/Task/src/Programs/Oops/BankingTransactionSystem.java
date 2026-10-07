@@ -1,24 +1,21 @@
 package Programs.Oops;
 
 public class BankingTransactionSystem {
-
     public static void main(String[] args) {
 
-        Manager m = new Manager(01,"Rajesh","HR");
+        SavingsAccount s = new SavingsAccount(10123456, "SBI", "Rahul", 20000);
+        CurrentAccount c = new CurrentAccount(10255678, "HDFC", "Akash", 50000);
 
-        Developer d =new Developer(02,"Amith","Software development","Java");
+        s.deposit(5000);
+        s.withdraw(2000);
 
-        Intern i = new Intern(03,"akash","AIT");
+        c.deposit(10000);
+        c.withdraw(5000);
 
-        System.out.println("MANAGER DETAILS");
-        m.displayDetails();
-        System.out.println("\n");
+        System.out.println("----- Savings Account -----");
+        s.displayDetails();
 
-        System.out.println("DEVELOPER DETAILS");
-        d.displayDetails();
-        System.out.println("\n");
-
-        System.out.println("INTERN DETAILS");
-        i.displayDetails();
+        System.out.println("\n----- Current Account -----");
+        c.displayDetails();
     }
 }
