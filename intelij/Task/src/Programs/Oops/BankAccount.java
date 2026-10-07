@@ -1,6 +1,6 @@
 package Programs.Oops;
 
-public class BankAccount {
+class BankAccount {
     String BankName;
     int accountNumber;
     String accountHolder;
