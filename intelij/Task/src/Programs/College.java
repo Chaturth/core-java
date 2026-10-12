@@ -37,7 +37,7 @@ public class College {
         College c1 = new College("Rahul");
 
         College c2 = new College("Kiran");
-        
+
         c1.displayInfo();
 
         c2.displayInfo();
